@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#140E29"/>
+      <stop offset="100%" stop-color="#080414"/>
+    </linearGradient>
+    <linearGradient id="finG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#10B981"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="380" rx="28" fill="url(#bg5)"/>
+  <!-- Phone 1 (Left Card) -->
+  <g transform="translate(190, 20)">
+    <rect x="0" y="0" width="220" height="340" rx="28" fill="#0C0818" stroke="#322254" stroke-width="4"/>
+    <rect x="75" y="8" width="70" height="12" rx="6" fill="#1C1430"/>
+    <text x="20" y="45" fill="#FFF" font-family="'Space Grotesk', sans-serif" font-size="14" font-weight="bold">FINEDGED ✨</text>
+    <circle cx="195" cy="40" r="10" fill="#251A3E"/>
+    <!-- Balance Card -->
+    <rect x="16" y="60" width="188" height="100" rx="16" fill="url(#finG)"/>
+    <text x="30" y="86" fill="rgba(255,255,255,0.8)" font-family="sans-serif" font-size="10">TOTAL NET WORTH</text>
+    <text x="30" y="118" fill="#FFF" font-family="'Space Grotesk', sans-serif" font-size="22" font-weight="bold">$184,920.45</text>
+    <text x="30" y="142" fill="#ECFDF5" font-family="monospace" font-size="10">▲ +14.8% this month</text>
+    <!-- Quick Actions -->
+    <rect x="16" y="172" width="56" height="46" rx="10" fill="#1A122E"/>
+    <text x="44" y="200" fill="#FFF" font-family="sans-serif" font-size="10" text-anchor="middle">Send ↗</text>
+    <rect x="82" y="172" width="56" height="46" rx="10" fill="#1A122E"/>
+    <text x="110" y="200" fill="#FFF" font-family="sans-serif" font-size="10" text-anchor="middle">Invest ★</text>
+    <rect x="148" y="172" width="56" height="46" rx="10" fill="#1A122E"/>
+    <text x="176" y="200" fill="#FFF" font-family="sans-serif" font-size="10" text-anchor="middle">Crypto ⬡</text>
+    <!-- Portfolio breakdown -->
+    <rect x="16" y="230" width="188" height="92" rx="12" fill="#150F26"/>
+    <text x="28" y="250" fill="#A5A0B8" font-family="sans-serif" font-size="9" font-weight="bold">RECENT TRANSACTIONS</text>
+    <text x="28" y="275" fill="#FFF" font-family="sans-serif" font-size="10">Apple Inc (AAPL) Stock</text>
+    <text x="165" y="275" fill="#34D399" font-family="monospace" font-size="10">+$450</text>
+    <text x="28" y="302" fill="#FFF" font-family="sans-serif" font-size="10">Ethereum Staking Yield</text>
+    <text x="165" y="302" fill="#34D399" font-family="monospace" font-size="10">+$120</text>
+  </g>
+</svg>

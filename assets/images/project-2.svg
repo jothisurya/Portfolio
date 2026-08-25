@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#18112C"/>
+      <stop offset="100%" stop-color="#090514"/>
+    </linearGradient>
+    <linearGradient id="purpleG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#C026D3"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="380" rx="28" fill="url(#bg2)"/>
+  <!-- Phone Frame 1 -->
+  <g transform="translate(190, 20)">
+    <rect x="0" y="0" width="220" height="340" rx="28" fill="#0C0818" stroke="#372A5C" stroke-width="4"/>
+    <rect x="75" y="8" width="70" height="12" rx="6" fill="#201836"/>
+    <!-- Header -->
+    <text x="20" y="45" fill="#FFF" font-family="'Space Grotesk', sans-serif" font-size="14" font-weight="bold">VEDIC ✨</text>
+    <circle cx="195" cy="40" r="10" fill="#251E3D"/>
+    <!-- Star Chart Wheel -->
+    <circle cx="110" cy="125" r="55" fill="none" stroke="rgba(196, 181, 253, 0.4)" stroke-dasharray="3 3"/>
+    <rect x="80" y="95" width="60" height="60" fill="none" stroke="#8B5CF6" stroke-width="1.5" transform="rotate(45 110 125)"/>
+    <circle cx="110" cy="125" r="8" fill="url(#purpleG)"/>
+    <text x="110" y="200" fill="#C4B5FD" font-family="sans-serif" font-size="10" font-weight="bold" text-anchor="middle">Kundali Chart • Vrishabha Rasi</text>
+    <!-- Astrologer Card -->
+    <rect x="16" y="215" width="188" height="60" rx="12" fill="#1C1533" stroke="#322557" stroke-width="1"/>
+    <circle cx="42" cy="245" r="16" fill="url(#purpleG)"/>
+    <text x="42" y="250" fill="#FFF" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle">PT</text>
+    <text x="68" y="238" fill="#FFF" font-family="sans-serif" font-size="11" font-weight="bold">Pt. Raghavan</text>
+    <text x="68" y="252" fill="#A5A0B8" font-family="sans-serif" font-size="9">Vedic Astrologer • 12+ Yrs</text>
+    <text x="68" y="266" fill="#FBBF24" font-family="sans-serif" font-size="9">★ 4.9 (1.2k Reviews)</text>
+    <!-- CTA Button -->
+    <rect x="16" y="285" width="188" height="38" rx="10" fill="url(#purpleG)"/>
+    <text x="110" y="309" fill="#FFF" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="bold" text-anchor="middle">Book Live Consultation ↗</text>
+  </g>
+</svg>

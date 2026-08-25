@@ -1,0 +1,745 @@
+/* ==========================================================================
+   SURYA P. — UI/UX DESIGNER PORTFOLIO
+   High-Fidelity Project UI Mockups Stylesheet (Cosmic Purple/Violet Theme)
+   ========================================================================== */
+
+/* --- GENERAL MOCKUP UTILITIES --- */
+.mockup-window {
+  background-color: #110E1E;
+  border-radius: 18px;
+  border: 1px solid rgba(139, 92, 246, 0.15);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+  position: relative;
+  font-family: var(--font-body);
+}
+
+.window-header {
+  height: 38px;
+  background-color: #171329;
+  border-bottom: 1px solid rgba(139, 92, 246, 0.1);
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  gap: 12px;
+}
+
+.window-dots {
+  display: flex;
+  gap: 6px;
+}
+
+.window-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.window-dot.red { background-color: #ff5f56; }
+.window-dot.yellow { background-color: #ffbd2e; }
+.window-dot.green { background-color: #27c93f; }
+
+.window-title {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: #8E88A6;
+  letter-spacing: 0.03em;
+}
+
+/* ==========================================================================
+   PROJECT 01: HOSPITAL & MEDICAL AI DASHBOARD MOCKUP
+   ========================================================================== */
+.hospital-mockup-container {
+  width: 100%;
+  max-width: 1080px;
+  perspective: 1200px;
+  transition: transform 0.6s var(--ease-out-expo);
+}
+
+.hospital-mockup-container:hover {
+  transform: translateY(-8px) rotateX(2deg);
+}
+
+.hospital-dashboard {
+  width: 100%;
+  background: #0E0B19;
+  border: 1px solid #231C38;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.8), 0 0 40px rgba(139, 92, 246, 0.12);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Dashboard Top Navigation */
+.dash-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 24px;
+  background-color: #141024;
+  border-bottom: 1px solid #231C38;
+}
+
+.dash-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #F0F6FC;
+}
+
+.dash-brand-icon {
+  width: 26px;
+  height: 26px;
+  background: linear-gradient(135deg, #8B5CF6, #A78BFA);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 14px;
+}
+
+.dash-status-pills {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.dash-pill {
+  padding: 4px 10px;
+  border-radius: 100px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  font-family: var(--font-mono);
+}
+
+.dash-pill.live {
+  background: rgba(34, 197, 94, 0.15);
+  color: #4ade80;
+  border: 1px solid rgba(34, 197, 94, 0.3);
+}
+
+.dash-pill.ai {
+  background: rgba(139, 92, 246, 0.15);
+  color: #A78BFA;
+  border: 1px solid rgba(139, 92, 246, 0.35);
+}
+
+.dash-user-profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.8rem;
+  color: #C9D1D9;
+}
+
+.dash-avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #251E3B;
+  border: 1px solid #362D55;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+/* Dashboard Body Layout */
+.dash-body {
+  display: grid;
+  grid-template-columns: 280px 1fr 300px;
+  gap: 16px;
+  padding: 20px;
+  background-color: #0A0813;
+}
+
+/* Left Column: Triage Patients */
+.dash-col-triage {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.dash-card-title {
+  font-size: 0.78rem;
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #8E88A6;
+  margin-bottom: 4px;
+}
+
+.triage-patient-card {
+  background-color: #141024;
+  border: 1px solid #282042;
+  border-radius: 12px;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transition: border-color 0.2s;
+}
+
+.triage-patient-card.active {
+  border-color: #8B5CF6;
+  background: linear-gradient(180deg, #1C1533 0%, #141024 100%);
+  box-shadow: 0 0 20px rgba(139, 92, 246, 0.15);
+}
+
+.patient-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.patient-name {
+  font-family: var(--font-display);
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #F0F6FC;
+}
+
+.priority-tag {
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.priority-high { background: rgba(139, 92, 246, 0.25); color: #C4B5FD; border: 1px solid rgba(139, 92, 246, 0.4); }
+.priority-medium { background: rgba(234, 179, 8, 0.2); color: #facc15; }
+
+.patient-vitals-row {
+  display: flex;
+  gap: 10px;
+  font-size: 0.75rem;
+  color: #8E88A6;
+}
+
+.patient-vitals-row span b {
+  color: #F0F6FC;
+}
+
+/* Center Column: Live Telemetry & AI Diagnostic */
+.dash-col-main {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.vital-graph-card {
+  background-color: #141024;
+  border: 1px solid #282042;
+  border-radius: 14px;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.graph-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.graph-title {
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #F0F6FC;
+}
+
+.graph-svg-wrapper {
+  width: 100%;
+  height: 120px;
+  overflow: hidden;
+}
+
+.graph-svg-wrapper svg {
+  width: 100%;
+  height: 100%;
+}
+
+.vitals-stat-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.vital-stat-box {
+  background-color: #0B0813;
+  border: 1px solid #1F1934;
+  border-radius: 10px;
+  padding: 10px 14px;
+  display: flex;
+  flex-direction: column;
+}
+
+.vital-stat-box .val {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: #F0F6FC;
+}
+
+.vital-stat-box .unit {
+  font-size: 0.7rem;
+  color: #8E88A6;
+}
+
+/* Right Column: AI Triage Assistant */
+.dash-col-ai {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.ai-recommendation-card {
+  background: linear-gradient(180deg, #1C1533 0%, #141024 100%);
+  border: 1px solid rgba(139, 92, 246, 0.4);
+  border-radius: 14px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  box-shadow: 0 0 30px rgba(139, 92, 246, 0.1);
+}
+
+.ai-rec-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #A78BFA;
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.ai-rec-text {
+  font-size: 0.78rem;
+  color: #C9D1D9;
+  line-height: 1.5;
+}
+
+.ai-confidence-bar {
+  width: 100%;
+  height: 6px;
+  background-color: #1F1934;
+  border-radius: 3px;
+  overflow: hidden;
+  margin-top: 4px;
+}
+
+.ai-confidence-fill {
+  width: 94%;
+  height: 100%;
+  background: linear-gradient(90deg, #8B5CF6, #C4B5FD);
+}
+
+.ai-rec-action-btn {
+  padding: 8px 12px;
+  background: linear-gradient(90deg, #8B5CF6, #7C3AED);
+  color: #fff;
+  border-radius: 8px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 4px;
+  box-shadow: 0 4px 15px rgba(139, 92, 246, 0.35);
+}
+
+/* ==========================================================================
+   PROJECT 02: VEDIC — ASTROLOGY BOOKING PLATFORM MOCKUP
+   ========================================================================== */
+.vedic-mockup-container {
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 520px;
+}
+
+.mobile-phone-frame {
+  width: 260px;
+  height: 480px;
+  background-color: #0A0813;
+  border: 8px solid #201A36;
+  border-radius: 40px;
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.85), 0 0 35px rgba(139, 92, 246, 0.25);
+  overflow: hidden;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.5s var(--ease-out-expo), z-index 0.5s;
+}
+
+.phone-screen-content {
+  flex: 1;
+  padding: 20px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  background: radial-gradient(circle at top, #1E172E 0%, #0D0A14 100%);
+  color: #E2E8F0;
+  overflow: hidden;
+}
+
+/* Vedic Screen 1: Kundali Star Chart */
+.vedic-phone-1 {
+  transform: translateX(-160px) rotate(-6deg) scale(0.92);
+  z-index: 1;
+}
+
+/* Vedic Screen 2: Main Astrologer Booking (Center) */
+.vedic-phone-2 {
+  transform: translateX(0) scale(1);
+  z-index: 3;
+  box-shadow: 0 40px 90px rgba(0, 0, 0, 0.9), 0 0 50px rgba(139, 92, 246, 0.35);
+  border-color: #352B58;
+}
+
+/* Vedic Screen 3: Live Video Consultation */
+.vedic-phone-3 {
+  transform: translateX(160px) rotate(6deg) scale(0.92);
+  z-index: 2;
+}
+
+.vedic-mockup-container:hover .vedic-phone-1 {
+  transform: translateX(-210px) rotate(-10deg) scale(0.92);
+}
+
+.vedic-mockup-container:hover .vedic-phone-3 {
+  transform: translateX(210px) rotate(10deg) scale(0.92);
+}
+
+/* Phone UI Elements */
+.phone-notch {
+  width: 80px;
+  height: 18px;
+  background-color: #201A36;
+  border-radius: 0 0 12px 12px;
+  margin: 0 auto;
+}
+
+.vedic-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.vedic-logo {
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  font-weight: 800;
+  color: #F8FAFC;
+  letter-spacing: 0.05em;
+}
+
+.vedic-star-wheel {
+  width: 140px;
+  height: 140px;
+  margin: 8px auto;
+  border-radius: 50%;
+  border: 1px dashed rgba(216, 180, 254, 0.4);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: rotateZodiac 40s linear infinite;
+}
+
+@keyframes rotateZodiac {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.vedic-chart-square {
+  width: 80px;
+  height: 80px;
+  border: 1px solid rgba(139, 92, 246, 0.7);
+  transform: rotate(45deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 15px rgba(139, 92, 246, 0.3);
+}
+
+.astrologer-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(139, 92, 246, 0.2);
+  border-radius: 14px;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.astrologer-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #8B5CF6, #C026D3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.astrologer-info h6 {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.astrologer-info p {
+  font-size: 0.68rem;
+  color: #A5A0B8;
+}
+
+.rating-badge {
+  font-size: 0.68rem;
+  color: #FCD34D;
+  font-weight: 700;
+}
+
+.btn-vedic-book {
+  padding: 10px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #8B5CF6 0%, #C026D3 100%);
+  color: #fff;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-align: center;
+  margin-top: auto;
+  box-shadow: 0 4px 16px rgba(139, 92, 246, 0.4);
+}
+
+/* ==========================================================================
+   PROJECT 03: MANGALYACHEPPU — MATCHMAKING PLATFORM SPLIT SCREEN
+   ========================================================================== */
+.mangalyacheppu-container {
+  width: 100%;
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 30px;
+  align-items: center;
+}
+
+/* Left: Mobile Profile Card */
+.matrimony-mobile-view {
+  width: 100%;
+  height: 460px;
+  background-color: #0E0A18;
+  border: 6px solid #231B3C;
+  border-radius: 36px;
+  overflow: hidden;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+}
+
+.matrimony-profile-img-box {
+  height: 220px;
+  background: linear-gradient(180deg, #241638 0%, #120C1F 100%);
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  padding: 16px;
+}
+
+.compatibility-tag {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background: rgba(139, 92, 246, 0.25);
+  border: 1px solid rgba(139, 92, 246, 0.45);
+  color: #C4B5FD;
+  padding: 4px 10px;
+  border-radius: 100px;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.profile-summary h5 {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.profile-summary p {
+  font-size: 0.75rem;
+  color: #CBD5E1;
+}
+
+.matrimony-profile-details {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #120D20;
+  flex: 1;
+}
+
+.profile-tags-cluster {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.matrimony-pill {
+  padding: 4px 8px;
+  background: #1C1530;
+  border: 1px solid #2C214C;
+  border-radius: 6px;
+  font-size: 0.7rem;
+  color: #A5A0B8;
+}
+
+.action-buttons-row {
+  display: flex;
+  gap: 12px;
+  margin-top: auto;
+}
+
+.btn-matrimony-skip, .btn-matrimony-connect {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.btn-matrimony-skip {
+  background-color: #1A132C;
+  color: #A5A0B8;
+  border: 1px solid #2F2350;
+}
+
+.btn-matrimony-connect {
+  background: linear-gradient(90deg, #8B5CF6, #A855F7);
+  color: #fff;
+  box-shadow: 0 4px 16px rgba(139, 92, 246, 0.4);
+}
+
+/* Right: Admin Verification Dashboard */
+.matrimony-admin-view {
+  background-color: #120D20;
+  border: 1px solid #291F47;
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.admin-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #221A3B;
+  padding-bottom: 14px;
+}
+
+.admin-top h4 {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 700;
+  color: #F8FAFC;
+}
+
+.admin-metric-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.adm-metric {
+  background-color: #19122C;
+  border: 1px solid #281D46;
+  border-radius: 10px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.adm-metric .num {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #A78BFA;
+}
+
+.adm-metric .lbl {
+  font-size: 0.7rem;
+  color: #A5A0B8;
+}
+
+.verification-queue-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.78rem;
+}
+
+.verification-queue-table th {
+  text-align: left;
+  padding: 8px 10px;
+  color: #726B88;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+}
+
+.verification-queue-table td {
+  padding: 10px;
+  border-top: 1px solid #221A3B;
+  color: #D1D5DB;
+}
+
+.verified-badge-pill {
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 0.68rem;
+  font-weight: 600;
+  background: rgba(34, 197, 94, 0.15);
+  color: #4ade80;
+}
+
+@media (max-width: 1024px) {
+  .dash-body {
+    grid-template-columns: 1fr;
+  }
+  
+  .mangalyacheppu-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .matrimony-mobile-view {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+  
+  .vedic-phone-1, .vedic-phone-3 {
+    display: none;
+  }
+  
+  .vedic-phone-2 {
+    transform: none;
+  }
+}
