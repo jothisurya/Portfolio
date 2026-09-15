@@ -1,4 +1,4 @@
-﻿# Surya P â€” UI/UX Designer Portfolio
+﻿# Surya P | UI/UX Designer Portfolio
 
 Modern, interactive personal portfolio website for Surya P (UI/UX Designer).
 
