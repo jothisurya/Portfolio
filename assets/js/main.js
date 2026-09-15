@@ -202,7 +202,7 @@ if (typeof ScrollReveal !== "undefined") {
   });
 
   sr.reveal(
-    `.home__image, .projects__container, .work__container, .testimonials__container, .contact__container`
+    `.home__image, .projects__container, .work__container, .testimonials__container, .opentowork__container, .contact__container`
   );
   sr.reveal(`.home__data`, { delay: 900, origin: "bottom" });
   sr.reveal(`.home__info`, { delay: 1200, origin: "bottom" });
