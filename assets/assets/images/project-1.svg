@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141026"/>
+      <stop offset="100%" stop-color="#080612"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1F1A3A"/>
+      <stop offset="100%" stop-color="#120E24"/>
+    </linearGradient>
+    <linearGradient id="pulseGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#C4B5FD"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="380" rx="28" fill="url(#bg1)"/>
+  <!-- Window Header -->
+  <rect x="24" y="24" width="552" height="42" rx="12" fill="#1C1733" stroke="#2D244D" stroke-width="1"/>
+  <circle cx="50" cy="45" r="5" fill="#EF4444"/>
+  <circle cx="68" cy="45" r="5" fill="#F59E0B"/>
+  <circle cx="86" cy="45" r="5" fill="#10B981"/>
+  <text x="110" y="49" fill="#A5A0B8" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="600">MEDIC-AI // EMERGENCY TRIAGE SUITE</text>
+  <rect x="460" y="34" width="100" height="22" rx="11" fill="rgba(139, 92, 246, 0.2)" stroke="#8B5CF6" stroke-width="1"/>
+  <text x="475" y="49" fill="#C4B5FD" font-family="monospace" font-size="10" font-weight="bold">● LIVE AI (94%)</text>
+  <!-- Card Left -->
+  <rect x="24" y="78" width="180" height="276" rx="14" fill="url(#cardGrad)" stroke="#2D244D" stroke-width="1"/>
+  <text x="40" y="104" fill="#8B5CF6" font-family="sans-serif" font-size="11" font-weight="bold">ACTIVE TRAUMA QUEUE</text>
+  <rect x="36" y="118" width="156" height="64" rx="8" fill="#282148" stroke="#8B5CF6" stroke-width="1"/>
+  <text x="48" y="138" fill="#FFF" font-family="sans-serif" font-size="11" font-weight="bold">Kavitha S. (Bed #04)</text>
+  <text x="48" y="156" fill="#F87171" font-family="monospace" font-size="10">CRITICAL • HR 138</text>
+  <text x="48" y="172" fill="#A5A0B8" font-family="sans-serif" font-size="9">AI Alert: Arrhythmia</text>
+  <rect x="36" y="190" width="156" height="54" rx="8" fill="#161229"/>
+  <text x="48" y="210" fill="#E2E8F0" font-family="sans-serif" font-size="11" font-weight="600">Rahul V. (Bed #08)</text>
+  <text x="48" y="228" fill="#FBBF24" font-family="monospace" font-size="10">MODERATE • BP 130/85</text>
+  <rect x="36" y="252" width="156" height="54" rx="8" fill="#161229"/>
+  <text x="48" y="272" fill="#E2E8F0" font-family="sans-serif" font-size="11" font-weight="600">Deepak M. (Bed #12)</text>
+  <text x="48" y="290" fill="#34D399" font-family="monospace" font-size="10">STABLE • SpO2 98%</text>
+  <!-- Card Right Main -->
+  <rect x="216" y="78" width="360" height="276" rx="14" fill="url(#cardGrad)" stroke="#2D244D" stroke-width="1"/>
+  <text x="236" y="104" fill="#FFF" font-family="'Space Grotesk', sans-serif" font-size="14" font-weight="bold">Realtime Telemetry &amp; AI Diagnostic</text>
+  <!-- Graph -->
+  <path d="M236,180 L280,180 L290,140 L300,210 L310,120 L320,180 L380,180 L390,140 L400,210 L410,120 L420,180 L480,180 L490,140 L500,210 L510,120 L520,180 L556,180" fill="none" stroke="url(#pulseGrad)" stroke-width="3" stroke-linecap="round"/>
+  <!-- Stat boxes -->
+  <rect x="236" y="220" width="98" height="60" rx="10" fill="#100C22" stroke="#251E40" stroke-width="1"/>
+  <text x="246" y="240" fill="#8B5CF6" font-family="monospace" font-size="9">HEART RATE</text>
+  <text x="246" y="266" fill="#FFF" font-family="'Space Grotesk', sans-serif" font-size="18" font-weight="bold">138 <tspan font-size="10" fill="#A5A0B8">BPM</tspan></text>
+  <rect x="344" y="220" width="98" height="60" rx="10" fill="#100C22" stroke="#251E40" stroke-width="1"/>
+  <text x="354" y="240" fill="#A5A0B8" font-family="monospace" font-size="9">BLOOD PRESSURE</text>
+  <text x="354" y="266" fill="#FFF" font-family="'Space Grotesk', sans-serif" font-size="18" font-weight="bold">85/55</text>
+  <rect x="452" y="220" width="104" height="60" rx="10" fill="#100C22" stroke="#251E40" stroke-width="1"/>
+  <text x="462" y="240" fill="#10B981" font-family="monospace" font-size="9">O2 SATURATION</text>
+  <text x="462" y="266" fill="#FFF" font-family="'Space Grotesk', sans-serif" font-size="18" font-weight="bold">91%</text>
+  <rect x="236" y="292" width="320" height="46" rx="8" fill="rgba(139, 92, 246, 0.15)" stroke="#8B5CF6" stroke-width="1"/>
+  <text x="248" y="318" fill="#C4B5FD" font-family="sans-serif" font-size="11">⚡ AI Recommendation: Administer Adenosine (6mg IV Push)</text>
+</svg>

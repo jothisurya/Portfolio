@@ -1,0 +1,276 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 1600" width="1440" height="1600" style="background:#ffffff; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+  <defs>
+    <linearGradient id="landingHeroGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f0f7ff" />
+      <stop offset="50%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#f8fafc" />
+    </linearGradient>
+    <linearGradient id="btnGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="100%" stop-color="#0369a1" />
+    </linearGradient>
+    <filter id="heroCardShadow" x="-3%" y="-3%" width="106%" height="108%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="10" stdDeviation="15" flood-color="#0284c7" flood-opacity="0.10" />
+    </filter>
+  </defs>
+
+  <!-- ================= NAV HEADER ================= -->
+  <g id="landingNav" transform="translate(0, 0)">
+    <rect x="0" y="0" width="1440" height="75" fill="#ffffff" stroke="#e2e8f0" stroke-width="1" />
+    
+    <g transform="translate(80, 20)">
+      <rect x="0" y="0" width="36" height="36" rx="10" fill="url(#btnGrad)" />
+      <text x="18" y="24" fill="#ffffff" font-size="16" font-weight="900" text-anchor="middle">IE</text>
+      <text x="46" y="24" fill="#0f172a" font-size="18" font-weight="900">Invoice<tspan fill="#0284c7">Easy</tspan></text>
+      <rect x="156" y="10" width="80" height="18" rx="9" fill="#f0f9ff" stroke="#bae6fd" stroke-width="1" />
+      <text x="196" y="22" fill="#0369a1" font-size="10" font-weight="bold" text-anchor="middle">🇮🇳 India Edition</text>
+    </g>
+
+    <!-- Center Links -->
+    <g transform="translate(560, 42)" font-size="13" font-weight="600" fill="#475569">
+      <text x="0" y="0">Features</text>
+      <text x="90" y="0">How It Works</text>
+      <text x="210" y="0">Sample Invoice</text>
+      <text x="340" y="0">Pricing</text>
+      <text x="420" y="0">FAQs</text>
+    </g>
+
+    <!-- Right CTA Buttons -->
+    <g transform="translate(1180, 18)">
+      <text x="40" y="24" fill="#334155" font-size="13" font-weight="700">Sign In</text>
+      <rect x="90" y="0" width="130" height="40" rx="10" fill="url(#btnGrad)" />
+      <text x="155" y="25" fill="#ffffff" font-size="13" font-weight="bold" text-anchor="middle">Get Started Free</text>
+    </g>
+  </g>
+
+  <!-- ================= HERO SECTION ================= -->
+  <g id="heroSection" transform="translate(0, 75)">
+    <rect x="0" y="0" width="1440" height="700" fill="url(#landingHeroGrad)" />
+
+    <g transform="translate(720, 80)" text-anchor="middle">
+      <!-- Badge -->
+      <rect x="-160" y="0" width="320" height="28" rx="14" fill="#f0f9ff" stroke="#bae6fd" stroke-width="1" />
+      <text x="0" y="18" fill="#0369a1" font-size="11" font-weight="bold">✨ Fast, GST-Compliant Invoicing Built for India</text>
+
+      <!-- Main Headline -->
+      <text x="0" y="70" fill="#0f172a" font-size="44" font-weight="900" letter-spacing="-1">
+        Create Professional Invoices
+      </text>
+      <text x="0" y="120" fill="#0284c7" font-size="44" font-weight="900" letter-spacing="-1">
+        in Minutes
+      </text>
+
+      <!-- Subtitle -->
+      <text x="0" y="160" fill="#64748b" font-size="15" font-weight="400">
+        The all-in-one billing SaaS for Indian freelancers, consultants, salons, agencies, and small businesses.
+      </text>
+      <text x="0" y="182" fill="#64748b" font-size="15" font-weight="400">
+        Generate GST tax invoices, collect payments with instant UPI QR codes, and download high-res A4 PDFs.
+      </text>
+
+      <!-- CTA Buttons -->
+      <g transform="translate(0, 215)">
+        <rect x="-170" y="0" width="200" height="48" rx="12" fill="#0284c7" />
+        <text x="-70" y="29" fill="#ffffff" font-size="14" font-weight="bold">Create Free Invoice →</text>
+
+        <rect x="50" y="0" width="150" height="48" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1" />
+        <text x="125" y="29" fill="#0f172a" font-size="14" font-weight="bold">Explore Demo</text>
+      </g>
+
+      <!-- Feature Ticks -->
+      <g transform="translate(0, 290)" font-size="12" font-weight="600" fill="#475569">
+        <text x="-220" y="0">✓ No credit card required</text>
+        <text x="0" y="0">✓ 100% Indian GST &amp; HSN/SAC ready</text>
+        <text x="220" y="0">✓ Instant UPI QR payments</text>
+      </g>
+    </g>
+
+    <!-- Embedded Hero Invoice Card Mockup -->
+    <g transform="translate(320, 420)" filter="url(#heroCardShadow)">
+      <rect x="0" y="0" width="800" height="310" rx="20" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5" />
+      
+      <!-- Mini Preview Header -->
+      <g transform="translate(30, 24)">
+        <text x="0" y="16" fill="#0f172a" font-size="16" font-weight="bold">Apex Studio &amp; Consultancy</text>
+        <text x="0" y="32" fill="#64748b" font-size="10">GSTIN: 27AABCU9603R1ZM • Mumbai, Maharashtra</text>
+
+        <g transform="translate(560, 0)">
+          <rect x="80" y="0" width="100" height="22" rx="4" fill="#0f172a" />
+          <text x="130" y="15" fill="#ffffff" font-size="10" font-weight="bold" text-anchor="middle">TAX INVOICE</text>
+          <text x="180" y="36" fill="#0369a1" font-size="12" font-weight="bold" text-anchor="end">INV-2026-001</text>
+        </g>
+      </g>
+
+      <line x1="30" y1="70" x2="770" y2="70" stroke="#f1f5f9" stroke-width="1" />
+
+      <!-- Mini Billed To -->
+      <g transform="translate(30, 85)" font-size="11">
+        <text x="0" y="0" fill="#0369a1" font-size="9" font-weight="bold">BILLED TO:</text>
+        <text x="0" y="16" fill="#0f172a" font-weight="bold">TechNova Solutions Pvt Ltd</text>
+        <text x="0" y="30" fill="#64748b" font-size="10">Bengaluru, Karnataka (POS: 29 • Inter-State IGST 18%)</text>
+      </g>
+
+      <!-- Mini Table -->
+      <g transform="translate(30, 140)">
+        <rect x="0" y="0" width="740" height="24" rx="4" fill="#0f172a" />
+        <g transform="translate(10, 16)" fill="#ffffff" font-size="9" font-weight="bold">
+          <text x="10" y="0">ITEM DESCRIPTION</text>
+          <text x="350" y="0">HSN/SAC</text>
+          <text x="440" y="0">QTY</text>
+          <text x="540" y="0">RATE</text>
+          <text x="640" y="0">GST</text>
+          <text x="710" y="0" text-anchor="end">TOTAL (₹)</text>
+        </g>
+
+        <g transform="translate(10, 42)" font-size="10" fill="#334155">
+          <text x="10" y="0" font-weight="bold" fill="#0f172a">UI/UX Design System &amp; Prototyping</text>
+          <text x="350" y="0" font-family="monospace">998311</text>
+          <text x="440" y="0">1 project</text>
+          <text x="540" y="0">₹65,000</text>
+          <text x="640" y="0" font-weight="bold" fill="#0369a1">18% IGST</text>
+          <text x="710" y="0" font-weight="bold" fill="#0f172a" text-anchor="end">₹76,700.00</text>
+        </g>
+      </g>
+
+      <!-- Bottom Row with UPI QR & Total -->
+      <g transform="translate(30, 220)">
+        <rect x="0" y="0" width="360" height="70" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1" />
+        <text x="14" y="20" fill="#64748b" font-size="9" font-weight="bold">SCAN &amp; PAY VIA UPI:</text>
+        <text x="14" y="38" fill="#0284c7" font-size="12" font-weight="bold" font-family="monospace">apexstudio@okaxis</text>
+        <text x="14" y="54" fill="#94a3b8" font-size="9">GPay • PhonePe • Paytm • BHIM</text>
+
+        <g transform="translate(480, 0)">
+          <text x="260" y="20" fill="#64748b" font-size="11" text-anchor="end">Subtotal: ₹1,15,000.00</text>
+          <text x="260" y="36" fill="#64748b" font-size="11" text-anchor="end">IGST (18%): ₹20,700.00</text>
+          <text x="260" y="62" fill="#0f172a" font-size="16" font-weight="900" text-anchor="end">Grand Total: <tspan fill="#0284c7">₹1,35,700.00</tspan></text>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- ================= 6 FEATURES SECTION ================= -->
+  <g id="featuresSection" transform="translate(0, 800)">
+    <g transform="translate(720, 40)" text-anchor="middle">
+      <text x="0" y="0" fill="#0284c7" font-size="12" font-weight="bold" letter-spacing="1">EVERYTHING YOU NEED</text>
+      <text x="0" y="30" fill="#0f172a" font-size="28" font-weight="900">Built Specifically for Indian Business Needs</text>
+      <text x="0" y="52" fill="#64748b" font-size="13">No accounting jargon. Just fast, compliant invoices and quotes that help you get paid on time.</text>
+    </g>
+
+    <!-- 6 Feature Cards Grid -->
+    <g transform="translate(100, 130)">
+      <!-- Card 1 -->
+      <g transform="translate(0, 0)">
+        <rect x="0" y="0" width="380" height="150" rx="14" fill="#ffffff" stroke="#e2e8f0" stroke-width="1" />
+        <circle cx="36" cy="36" r="18" fill="#f0f9ff" />
+        <text x="36" y="42" fill="#0284c7" font-size="16" font-weight="bold" text-anchor="middle">₹</text>
+        <text x="68" y="40" fill="#0f172a" font-size="15" font-weight="bold">Intelligent GST Engine</text>
+        <text x="20" y="80" fill="#64748b" font-size="12">Auto-splits CGST &amp; SGST for intra-state sales and applies IGST for inter-state clients. Full support for all 36 Indian states &amp; UTs.</text>
+      </g>
+
+      <!-- Card 2 -->
+      <g transform="translate(430, 0)">
+        <rect x="0" y="0" width="380" height="150" rx="14" fill="#ffffff" stroke="#e2e8f0" stroke-width="1" />
+        <circle cx="36" cy="36" r="18" fill="#ecfdf5" />
+        <text x="36" y="42" fill="#059669" font-size="16" font-weight="bold" text-anchor="middle">⚡</text>
+        <text x="68" y="40" fill="#0f172a" font-size="15" font-weight="bold">Instant UPI QR Payments</text>
+        <text x="20" y="80" fill="#64748b" font-size="12">Dynamic QR codes printed right on invoices. Clients can scan and pay with Google Pay, PhonePe, Paytm, or BHIM.</text>
+      </g>
+
+      <!-- Card 3 -->
+      <g transform="translate(860, 0)">
+        <rect x="0" y="0" width="380" height="150" rx="14" fill="#ffffff" stroke="#e2e8f0" stroke-width="1" />
+        <circle cx="36" cy="36" r="18" fill="#f5f3ff" />
+        <text x="36" y="42" fill="#7c3aed" font-size="16" font-weight="bold" text-anchor="middle">📄</text>
+        <text x="68" y="40" fill="#0f172a" font-size="15" font-weight="bold">Pixel-Perfect A4 PDFs</text>
+        <text x="20" y="80" fill="#64748b" font-size="12">Export crisp, high-resolution PDFs formatted to official Indian GST invoice standards with your logo and signature.</text>
+      </g>
+
+      <!-- Card 4 -->
+      <g transform="translate(0, 180)">
+        <rect x="0" y="0" width="380" height="150" rx="14" fill="#ffffff" stroke="#e2e8f0" stroke-width="1" />
+        <circle cx="36" cy="36" r="18" fill="#fffbeb" />
+        <text x="36" y="42" fill="#d97706" font-size="16" font-weight="bold" text-anchor="middle">📋</text>
+        <text x="68" y="40" fill="#0f172a" font-size="15" font-weight="bold">Quotations to Invoices</text>
+        <text x="20" y="80" fill="#64748b" font-size="12">Send formal proposals with expiry dates and convert accepted estimates into active tax invoices with 1 single click.</text>
+      </g>
+
+      <!-- Card 5 -->
+      <g transform="translate(430, 180)">
+        <rect x="0" y="0" width="380" height="150" rx="14" fill="#ffffff" stroke="#e2e8f0" stroke-width="1" />
+        <circle cx="36" cy="36" r="18" fill="#ecfdf5" />
+        <text x="36" y="42" fill="#059669" font-size="16" font-weight="bold" text-anchor="middle">🧾</text>
+        <text x="68" y="40" fill="#0f172a" font-size="15" font-weight="bold">Payment Receipts &amp; Ledger</text>
+        <text x="20" y="80" fill="#64748b" font-size="12">Record partial or full payments and generate official receipt vouchers that automatically update customer balances.</text>
+      </g>
+
+      <!-- Card 6 -->
+      <g transform="translate(860, 180)">
+        <rect x="0" y="0" width="380" height="150" rx="14" fill="#ffffff" stroke="#e2e8f0" stroke-width="1" />
+        <circle cx="36" cy="36" r="18" fill="#fff1f2" />
+        <text x="36" y="42" fill="#e11d48" font-size="16" font-weight="bold" text-anchor="middle">🔒</text>
+        <text x="68" y="40" fill="#0f172a" font-size="15" font-weight="bold">Public View Links &amp; WhatsApp</text>
+        <text x="20" y="80" fill="#64748b" font-size="12">Share view-only links directly via WhatsApp or email with bank details safely formatted and toggleable privacy access.</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ================= 3 PRICING TIERS ================= -->
+  <g id="pricingSection" transform="translate(0, 1200)">
+    <g transform="translate(720, 30)" text-anchor="middle">
+      <text x="0" y="0" fill="#0284c7" font-size="12" font-weight="bold" letter-spacing="1">AFFORDABLE PLANS</text>
+      <text x="0" y="28" fill="#0f172a" font-size="26" font-weight="900">Simple, Transparent Pricing</text>
+    </g>
+
+    <g transform="translate(200, 90)">
+      <!-- Starter -->
+      <g transform="translate(0, 0)">
+        <rect x="0" y="0" width="320" height="240" rx="16" fill="#ffffff" stroke="#e2e8f0" stroke-width="1" />
+        <text x="24" y="36" fill="#64748b" font-size="12" font-weight="bold">STARTER</text>
+        <text x="24" y="70" fill="#0f172a" font-size="28" font-weight="900">₹0 <tspan font-size="12" fill="#64748b" font-weight="normal">/forever</tspan></text>
+        <text x="24" y="105" fill="#475569" font-size="11">✓ Up to 15 Invoices / month</text>
+        <text x="24" y="125" fill="#475569" font-size="11">✓ PDF Download &amp; Print</text>
+        <text x="24" y="145" fill="#475569" font-size="11">✓ Dynamic UPI QR Code</text>
+
+        <rect x="24" y="175" width="272" height="38" rx="8" fill="#f1f5f9" />
+        <text x="160" y="198" fill="#0f172a" font-size="12" font-weight="bold" text-anchor="middle">Start Free</text>
+      </g>
+
+      <!-- Pro Freelancer (Featured) -->
+      <g transform="translate(360, -10)">
+        <rect x="0" y="0" width="320" height="260" rx="16" fill="#f0f9ff" stroke="#0284c7" stroke-width="2" />
+        <rect x="110" y="-12" width="100" height="24" rx="12" fill="#0284c7" />
+        <text x="160" y="4" fill="#ffffff" font-size="9" font-weight="bold" text-anchor="middle">MOST POPULAR</text>
+
+        <text x="24" y="46" fill="#0284c7" font-size="12" font-weight="bold">PRO FREELANCER</text>
+        <text x="24" y="80" fill="#0f172a" font-size="28" font-weight="900">₹299 <tspan font-size="12" fill="#64748b" font-weight="normal">/month</tspan></text>
+        <text x="24" y="115" fill="#0f172a" font-size="11" font-weight="bold">✓ Unlimited Invoices &amp; Quotes</text>
+        <text x="24" y="135" fill="#0f172a" font-size="11" font-weight="bold">✓ WhatsApp Direct Sharing</text>
+        <text x="24" y="155" fill="#0f172a" font-size="11" font-weight="bold">✓ GSTR-1 Tax Summary Reports</text>
+        <text x="24" y="175" fill="#0f172a" font-size="11" font-weight="bold">✓ Custom Logo &amp; Signature</text>
+
+        <rect x="24" y="198" width="272" height="40" rx="8" fill="#0284c7" />
+        <text x="160" y="222" fill="#ffffff" font-size="12" font-weight="bold" text-anchor="middle">Get Pro Plan</text>
+      </g>
+
+      <!-- Business Studio -->
+      <g transform="translate(720, 0)">
+        <rect x="0" y="0" width="320" height="240" rx="16" fill="#ffffff" stroke="#e2e8f0" stroke-width="1" />
+        <text x="24" y="36" fill="#64748b" font-size="12" font-weight="bold">BUSINESS STUDIO</text>
+        <text x="24" y="70" fill="#0f172a" font-size="28" font-weight="900">₹699 <tspan font-size="12" fill="#64748b" font-weight="normal">/month</tspan></text>
+        <text x="24" y="105" fill="#475569" font-size="11">✓ Everything in Pro</text>
+        <text x="24" y="125" fill="#475569" font-size="11">✓ Multi-Business Profiles</text>
+        <text x="24" y="145" fill="#475569" font-size="11">✓ Priority CA Support &amp; CSV Export</text>
+
+        <rect x="24" y="175" width="272" height="38" rx="8" fill="#f1f5f9" />
+        <text x="160" y="198" fill="#0f172a" font-size="12" font-weight="bold" text-anchor="middle">Get Business</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Footer -->
+  <g transform="translate(0, 1540)">
+    <rect x="0" y="0" width="1440" height="60" fill="#0f172a" />
+    <text x="80" y="35" fill="#94a3b8" font-size="12">© 2026 InvoiceEasy. Made with precision for Indian Businesses &amp; Freelancers.</text>
+    <text x="1360" y="35" fill="#94a3b8" font-size="12" text-anchor="end">GST Compliance • UPI Payments • A4 PDFs</text>
+  </g>
+</svg>
